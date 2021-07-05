@@ -1,5 +1,5 @@
 {% set name = "lbmpy" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lbmpy-{{ version }}.tar.gz
-  sha256: 01e1f766e1dc9d959b3a73dda4a114915462c719e44414da9b7bfa1f3f649f4e
+  sha256: 4000455c3aa9f1ef73b626ef83da436f29c8f758048b5f33ea3e01f36b6de024
 
 build:
-  number: 1
-  skip: true   # [py2k]
+  number: 0
+  skip: true  # [py2k]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -41,7 +41,7 @@ about:
   license: AGPL-3.0-or-later
   license_family: GPL
   license_file: COPYING.txt
-  summary: 'Code Generation for Lattice Boltzmann Methods'
+  summary: Code Generation for Lattice Boltzmann Methods
   description: |
     Run fast fluid simulations based on the lattice Boltzmann method
     in Python on CPUs and GPUs. lbmpy creates highly optimized LB compute
