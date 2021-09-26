@@ -1,5 +1,5 @@
 {% set name = "lbmpy" %}
-{% set version = "0.3.4" %}
+{% set version = "0.4.0" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lbmpy-{{ version }}.tar.gz
-  sha256: 4000455c3aa9f1ef73b626ef83da436f29c8f758048b5f33ea3e01f36b6de024
+  sha256: 9052434b5bd98504a4c33a051f474b73438e063bedca5422eb0612acc103a8f9
 
 build:
-  number: 0
-  skip: true  # [py2k]
+  number: 1
+  skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
     - python
   run:
     - numpy >=1.11.0
-    - pystencils
+    - pystencils >=0.4.0
     - python
     - sympy >=1.2
 
