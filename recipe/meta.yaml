@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [py2k]
+  skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
     - python
   run:
     - numpy >=1.11.0
-    - pystencils
+    - pystencils >=0.4.0
     - python
     - sympy >=1.2
 
