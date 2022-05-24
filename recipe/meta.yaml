@@ -23,7 +23,7 @@ requirements:
     - python
   run:
     - numpy >=1.11.0
-    - pystencils >=0.4.0
+    - pystencils >=1.0
     - python
     - sympy >=1.2
 
