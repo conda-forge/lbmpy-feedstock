@@ -1,5 +1,5 @@
 {% set name = "lbmpy" %}
-{% set version = "1.0" %}
+{% set version = "1.0.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lbmpy-{{ version }}.tar.gz
-  sha256: 2d2fc629e65cc46a16e757bdd7193ca07b8b17b0ac4738c8be72291407d6e750
+  sha256: 3f128a0902580b18932a31c07d9276a1294f30b1361b6f802bbba633695664b2
 
 build:
   number: 0
