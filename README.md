@@ -1,11 +1,11 @@
-About lbmpy
-===========
+About lbmpy-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lbmpy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://i10git.cs.fau.de/pycodegen/lbmpy/
 
 Package license: AGPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lbmpy-feedstock/blob/main/LICENSE.txt)
 
 Summary: Code Generation for Lattice Boltzmann Methods
 
