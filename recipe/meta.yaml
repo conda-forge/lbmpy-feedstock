@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/mabau/lbmpy/archive/release/{{ version }}.tar.gz
-  sha256: 8a754644fbf9f392d1634241027967af225384ce0104e597bf31b21a5c5e468f
+  sha256: 5fae6a536d89cd2810fc2bcd56092a3f672cd5cf8a3105962d5b5739c0a1f07b
 
 build:
   number: 1
@@ -21,10 +21,12 @@ requirements:
   host:
     - pip
     - python
+    - cython
   run:
     - numpy >=1.11.0
     - pystencils >=1.0
     - python
+    - cython
     - sympy >=1.2
 
 test:
