@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lbmpy-{{ version }}.tar.gz
-  sha256: 8a754644fbf9f392d1634241027967af225384ce0104e597bf31b21a5c5e468f
+  url: https://github.com/mabau/lbmpy/archive/release/{{ version }}.tar.gz
+  sha256: 5fae6a536d89cd2810fc2bcd56092a3f672cd5cf8a3105962d5b5739c0a1f07b
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python
+    - cython
   run:
     - numpy >=1.11.0
     - pystencils >=1.0
