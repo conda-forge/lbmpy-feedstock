@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lbmpy-{{ version }}.tar.gz
+  url: https://github.com/mabau/lbmpy/archive/release/{{ version }}.tar.gz
   sha256: 8a754644fbf9f392d1634241027967af225384ce0104e597bf31b21a5c5e468f
 
 build:
