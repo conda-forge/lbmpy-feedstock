@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/mabau/lbmpy/archive/release/{{ version }}.tar.gz
-  sha256: 1f5ef74a9ca6992c5b9245102d4fe183a190c96ee4b080333c53adbcd6d0427e
+  sha256: 6598c18993b216529d8bffec8b94f555c08343cec0fc58a51b361dbe09a7da5d
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv
 
