@@ -23,6 +23,7 @@ requirements:
     - pip
     - python
     - cython
+    - versioneer
   run:
     - numpy >=1.11.0
     - pystencils >=1.0
