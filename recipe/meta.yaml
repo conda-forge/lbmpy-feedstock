@@ -1,5 +1,5 @@
 {% set name = "lbmpy" %}
-{% set version = "1.3.6" %}
+{% set version = "1.3.7" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/mabau/lbmpy/archive/release/{{ version }}.tar.gz
-  sha256: 15f5d61df84c195ded55aa97f1926bdd792671585e362c333f3fe70697f185ce
+  sha256: d04be9622fd5c65ba4f89f209c349390fbf78df69d6b92b4e3886370735f4ec4
 
 build:
   number: 0
