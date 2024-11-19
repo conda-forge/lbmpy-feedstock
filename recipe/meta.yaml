@@ -24,6 +24,7 @@ requirements:
     - python
     - cython
     - versioneer
+    - setuptools
   run:
     - numpy >=1.11.0,<2
     - pystencils >=1.0
