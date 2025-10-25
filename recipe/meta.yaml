@@ -8,11 +8,10 @@ package:
 
 source:
   url: https://github.com/mabau/lbmpy/archive/release/{{ version }}.tar.gz
-  sha256: d04be9622fd5c65ba4f89f209c349390fbf78df69d6b92b4e3886370735f4ec4
+  sha256: a03675139e2414fe723cf48bd1f7157b9e10741d2f62c3095aa97a02f63aa2b9
 
 build:
   number: 1
-  skip: true  # [py<310]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -24,6 +23,7 @@ requirements:
     - python
     - cython
     - versioneer
+    - setuptools
   run:
     - numpy >=1.11.0,<2
     - pystencils >=1.0
