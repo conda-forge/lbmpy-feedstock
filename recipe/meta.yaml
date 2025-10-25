@@ -25,7 +25,7 @@ requirements:
     - versioneer
     - setuptools
   run:
-    - numpy >=1.11.0,<2
+    - numpy >=1.11.0
     - pystencils >=1.0
     - python
     - sympy >=1.2
